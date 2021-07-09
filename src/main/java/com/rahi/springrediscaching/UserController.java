@@ -15,7 +15,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    //    @Cacheable(value = "users")
+    @Cacheable(value = "users")
     @GetMapping("getAllUsers")
     public List<User> getAllUsers() {
         return userService.getAllUser();
